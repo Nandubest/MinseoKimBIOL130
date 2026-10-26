@@ -36,7 +36,7 @@ struct ImmersiveView: View {
             content.add(box2)
             
             let sphere3 = ModelEntity(
-                mesh: .generateSphere(radius: 0.1),
+                mesh: .generatePlane(width: 0.2, height: 0.1),
                 materials: [SimpleMaterial(color: .purple, isMetallic: true)])
             sphere3.position = [0.6, 1.2, -1]
             content.add(sphere3)
